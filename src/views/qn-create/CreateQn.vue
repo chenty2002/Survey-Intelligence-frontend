@@ -14,7 +14,7 @@
             </div>
           </el-card>
         </el-col>
-        <el-col :span="6">
+        <!-- <el-col :span="6">
           <el-card class="box-card"  @mouseover.native="isHoverTest=true" @mouseout.native="isHoverTest=false">
             <img class="image" src="../../assets/images/test.png" alt="test_img">
             <span><h3>考试</h3></span>
@@ -26,8 +26,8 @@
               <el-row>成绩查询，自动阅卷</el-row>
             </div>
           </el-card>
-        </el-col>
-        <el-col :span="6">
+        </el-col> -->
+        <!-- <el-col :span="6">
           <el-card class="box-card" @mouseover.native="isHoverVote=true" @mouseout.native="isHoverVote=false">
             <img class="image" src="../../assets/images/vote.png" alt="vote_img">
             <span ><h3>投票</h3></span>
@@ -39,9 +39,28 @@
               <el-row>实时排行，微信投票</el-row>
             </div>
           </el-card>
+        </el-col> -->
+        <el-col :span="6">
+          <el-card class="box-card" @mouseover.native="isHoverForm=true" @mouseout.native="isHoverForm=false">
+            <img class="image" src="../../assets/images/form.png" alt="form_img">
+            <span ><h3>表单</h3></span>
+            <div v-if="isHoverForm">
+              <el-button type="success" @click="dialogVisible=true;quesType=4">立即创建</el-button>
+            </div>
+            <div class="describe" v-else>
+              <el-row>信息登记，活动报名</el-row>
+              <el-row>Excel导入数据</el-row>
+            </div>
+          </el-card>
+        </el-col>
+        <el-col :span="6">
+          <el-card class="box-card">
+            <div><img class="image" src="../../assets/images/wen.png" alt="more_img"></div>
+            <span><h3 style="height: 350px;margin: auto">更多内容 敬请期待......</h3><br></span>
+          </el-card>
         </el-col>
       </el-row>
-    <el-row class="type-choose">
+    <!-- <el-row class="type-choose">
       <el-col :span="6" offset="6">
         <el-card class="box-card" @mouseover.native="isHoverForm=true" @mouseout.native="isHoverForm=false">
           <img class="image" src="../../assets/images/form.png" alt="form_img">
@@ -74,7 +93,7 @@
           <span><h3 style="height: 350px;margin: auto">更多内容 敬请期待......</h3><br></span>
         </el-card>
       </el-col>
-    </el-row>
+    </el-row> -->
 
     <el-dialog title=请输入问卷标题 :visible.sync="dialogVisible" width="30%" style="margin-top: 100px">
       <el-input class="input" v-model="surveyTitle" ></el-input>

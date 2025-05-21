@@ -96,8 +96,8 @@
                     导出
                     <el-dropdown-menu slot="dropdown">
                       <el-dropdown-item :command="beforeHandleCommand(indexMethod(index),'md')">导出MarkDown</el-dropdown-item>
-                      <el-dropdown-item :command="beforeHandleCommand(indexMethod(index),'word')">导出Word</el-dropdown-item>
-                      <el-dropdown-item :command="beforeHandleCommand(indexMethod(index),'pdf')">导出PDF</el-dropdown-item>
+                      <!-- <el-dropdown-item :command="beforeHandleCommand(indexMethod(index),'word')">导出Word</el-dropdown-item>
+                      <el-dropdown-item :command="beforeHandleCommand(indexMethod(index),'pdf')">导出PDF</el-dropdown-item> -->
                     </el-dropdown-menu>
                   </el-dropdown>
                   <el-button type="text" class="rightside el-icon-delete" @click="deleteQn(indexMethod(index))"> 删除</el-button>

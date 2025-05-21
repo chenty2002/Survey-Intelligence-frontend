@@ -18,13 +18,13 @@
             </el-menu-item>
           </router-link>
 
-          <router-link :to="{name: 'chartreport', query: {pid: this.pid}}">
+          <!-- <router-link :to="{name: 'chartreport', query: {pid: this.pid}}">
             <el-menu-item>
               <i class="el-icon-s-data nav-icon"></i>
               <br>
               <span slot="title">图表报告</span>
             </el-menu-item>
-          </router-link>
+          </router-link> -->
 
           <router-link :to="{name: 'answerdata', query: {pid: this.pid}}">
             <el-menu-item>
@@ -42,13 +42,13 @@
 <!--            </el-menu-item>-->
 <!--          </router-link>-->
 
-          <router-link :to="{name: 'crossover', query: {pid: this.pid}}">
+          <!-- <router-link :to="{name: 'crossover', query: {pid: this.pid}}">
             <el-menu-item>
               <i class="el-icon-data-analysis nav-icon"></i>
               <br>
               <span slot="title">交叉分析</span>
             </el-menu-item>
-          </router-link>
+          </router-link> -->
 
           <router-link to="/index">
             <el-menu-item>
